@@ -1,8 +1,8 @@
 S3_BUCKET ?= heroku-buildpack-static
 
-.PHONY: build build-heroku-18 build-heroku-20 heroku-22 sync
+.PHONY: build heroku-22 sync
 
-build: build-heroku-18 build-heroku-20 build-heroku-22
+build: build-heroku-22
 
 build-heroku-18:
 	@docker pull heroku/heroku:18-build
